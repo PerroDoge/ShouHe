@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>spring-MVC | 首禾的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Spring-MVC什么是MVC？MVC是模型（Model）、视图（View）、控制器（Controller）的简写，是一种设计规范。就是以将业务逻辑、数据、显示分离的方法来写代码，其目的是为了降低视图与业务逻辑之间的双向耦合。MVC不是设计模式，是一种架构模式。  Model：数据模型，用来提供将要展示出的数据，因此包含数据（Dao层）和行为（Service层）。 View：负责进行模型的展示，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="spring-MVC">
+<meta property="og:url" content="https://github.com/PerroDoge/ShouHe/2020/05/14/spring-MVC/index.html">
+<meta property="og:site_name" content="首禾的博客">
+<meta property="og:description" content="Spring-MVC什么是MVC？MVC是模型（Model）、视图（View）、控制器（Controller）的简写，是一种设计规范。就是以将业务逻辑、数据、显示分离的方法来写代码，其目的是为了降低视图与业务逻辑之间的双向耦合。MVC不是设计模式，是一种架构模式。  Model：数据模型，用来提供将要展示出的数据，因此包含数据（Dao层）和行为（Service层）。 View：负责进行模型的展示，">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="d:%5CHexo%5Cblog%5Csource%5Cimages%5Cmvc-1589463399539.png">
+<meta property="og:image" content="d:%5CHexo%5Cblog%5Csource%5Cimages%5Cspringmvc%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B.jpg">
+<meta property="article:published_time" content="2020-05-14T13:02:21.595Z">
+<meta property="article:modified_time" content="2020-05-14T13:44:17.703Z">
+<meta property="article:author" content="ShouHe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="d:%5CHexo%5Cblog%5Csource%5Cimages%5Cmvc-1589463399539.png">
+  
+    <link rel="alternate" href="/atom.xml" title="首禾的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">首禾的博客</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">阿拉巴扎嘿？苏拉吧唧贡！</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://github.com/PerroDoge/ShouHe"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-spring-MVC" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/05/14/spring-MVC/" class="article-date">
+  <time datetime="2020-05-14T13:02:21.595Z" itemprop="datePublished">2020-05-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      spring-MVC
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Spring-MVC"><a href="#Spring-MVC" class="headerlink" title="Spring-MVC"></a>Spring-MVC</h1><h2 id="什么是MVC？"><a href="#什么是MVC？" class="headerlink" title="什么是MVC？"></a>什么是MVC？</h2><p>MVC是模型（Model）、视图（View）、控制器（Controller）的简写，是一种设计规范。就是以将业务逻辑、数据、显示分离的方法来写代码，其目的是<strong>为了降低视图与业务逻辑之间的双向耦合</strong>。MVC不是设计模式，是一种<strong>架构模式</strong>。</p>
+<p><img src="D:%5CHexo%5Cblog%5Csource%5Cimages%5Cmvc-1589463399539.png" alt="mvc"></p>
+<p>Model：数据模型，用来提供将要展示出的数据，因此包含数据（Dao层）和行为（Service层）。</p>
+<p>View：负责进行模型的展示，就是用户看得到的界面。</p>
+<p>Controller：负责接收用户的请求和将请求转发给Model层，处理完毕后把返回的数据返回给View。</p>
+<h2 id="DispatcherServlet"><a href="#DispatcherServlet" class="headerlink" title="DispatcherServlet"></a>DispatcherServlet</h2><p>Spring-MVC中最核心的是DispatcherServlet的设计，因为Spring-MVC是基于Servlet的，所以请求都会发给Servlet，而Spring-MVC中的Servlet就一个，这个Servlet起到了调度员的作用，将接收到的请求转发给指定的Controller，这个Servlet就是DistpatcherServlet。这个设计使得Spring-MVC的侵入性降低，在写Spring-MVC项目的时候不用让Controller去实现Servlet接口，更加灵活。</p>
+<h2 id="Spring-MVC的运行流程"><a href="#Spring-MVC的运行流程" class="headerlink" title="Spring-MVC的运行流程"></a>Spring-MVC的运行流程</h2><p><img src="D:%5CHexo%5Cblog%5Csource%5Cimages%5Cspringmvc%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B.jpg" alt="springmvc运行流程"></p>
+<p>1. </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/PerroDoge/ShouHe/2020/05/14/spring-MVC/" data-id="cka6tzhb3000000wb6orfaais" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2020/05/14/ZooKeeper/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">ZooKeeper</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">五月 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/05/14/spring-MVC/">spring-MVC</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/14/ZooKeeper/">ZooKeeper</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 ShouHe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

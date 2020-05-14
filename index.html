@@ -68,6 +68,50 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-spring-MVC" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/05/14/spring-MVC/" class="article-date">
+  <time datetime="2020-05-14T13:02:21.595Z" itemprop="datePublished">2020-05-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/14/spring-MVC/">spring-MVC</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Spring-MVC"><a href="#Spring-MVC" class="headerlink" title="Spring-MVC"></a>Spring-MVC</h1><h2 id="什么是MVC？"><a href="#什么是MVC？" class="headerlink" title="什么是MVC？"></a>什么是MVC？</h2><p>MVC是模型（Model）、视图（View）、控制器（Controller）的简写，是一种设计规范。就是以将业务逻辑、数据、显示分离的方法来写代码，其目的是<strong>为了降低视图与业务逻辑之间的双向耦合</strong>。MVC不是设计模式，是一种<strong>架构模式</strong>。</p>
+<p><img src="D:%5CHexo%5Cblog%5Csource%5Cimages%5Cmvc-1589463399539.png" alt="mvc"></p>
+<p>Model：数据模型，用来提供将要展示出的数据，因此包含数据（Dao层）和行为（Service层）。</p>
+<p>View：负责进行模型的展示，就是用户看得到的界面。</p>
+<p>Controller：负责接收用户的请求和将请求转发给Model层，处理完毕后把返回的数据返回给View。</p>
+<h2 id="DispatcherServlet"><a href="#DispatcherServlet" class="headerlink" title="DispatcherServlet"></a>DispatcherServlet</h2><p>Spring-MVC中最核心的是DispatcherServlet的设计，因为Spring-MVC是基于Servlet的，所以请求都会发给Servlet，而Spring-MVC中的Servlet就一个，这个Servlet起到了调度员的作用，将接收到的请求转发给指定的Controller，这个Servlet就是DistpatcherServlet。这个设计使得Spring-MVC的侵入性降低，在写Spring-MVC项目的时候不用让Controller去实现Servlet接口，更加灵活。</p>
+<h2 id="Spring-MVC的运行流程"><a href="#Spring-MVC的运行流程" class="headerlink" title="Spring-MVC的运行流程"></a>Spring-MVC的运行流程</h2><p><img src="D:%5CHexo%5Cblog%5Csource%5Cimages%5Cspringmvc%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B.jpg" alt="springmvc运行流程"></p>
+<p>1. </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/PerroDoge/ShouHe/2020/05/14/spring-MVC/" data-id="cka6tzhb3000000wb6orfaais" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-ZooKeeper" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/05/14/ZooKeeper/" class="article-date">
@@ -298,56 +342,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://github.com/PerroDoge/ShouHe/2020/05/14/ZooKeeper/" data-id="cka6ryqcv0000hwwb97rb81zj" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/05/14/hello-world/" class="article-date">
-  <time datetime="2020-05-14T12:05:23.104Z" itemprop="datePublished">2020-05-14</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/14/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/PerroDoge/ShouHe/2020/05/14/hello-world/" data-id="cka6ryqd40001hwwb5yahg79j" class="article-share-link">Share</a>
+      <a data-url="https://github.com/PerroDoge/ShouHe/2020/05/14/ZooKeeper/" data-id="cka6tzhbc000100wb54s6fvc9" class="article-share-link">Share</a>
       
       
     </footer>
@@ -388,11 +383,11 @@
       <ul>
         
           <li>
-            <a href="/2020/05/14/ZooKeeper/">ZooKeeper</a>
+            <a href="/2020/05/14/spring-MVC/">spring-MVC</a>
           </li>
         
           <li>
-            <a href="/2020/05/14/hello-world/">Hello World</a>
+            <a href="/2020/05/14/ZooKeeper/">ZooKeeper</a>
           </li>
         
       </ul>
